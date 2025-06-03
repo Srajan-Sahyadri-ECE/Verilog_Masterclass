@@ -2,7 +2,7 @@
 
 ```verilog
 
-module fourto1mux(
+module 4to1mux(
   input [1:0] sel,
   input [3:0] I, 
   output reg y
@@ -29,7 +29,7 @@ module fourto1mux(
   reg [3:0] I_tb;
   wire y_tb;
 
-  fourto1mux u0 (
+  4to1mux u0 (
     .sel(sel_tb),
     .I(I_tb),
     .y(y_tb)
